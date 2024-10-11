@@ -1,21 +1,26 @@
+:root {
+    --cor-principal: blue;
+    --cor-secundaria: #fff;
+}
+
 body {
     font-family:  "Roboto", sans-serif;
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: var(--cor-principal);
 }
 
 #cabecalho .nav .nav-link.active {
-    background-color: #fff;
-    color: #e15f41;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
 }
 
 #cabecalho .nav .nav-link,
 .navbar-brand, 
 .navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
-    color: #fff;
+.nav-bandas .nav-link.active:hover {
+    color: var(--cor-secundaria);
 }
 
 .navbar-brand {
@@ -23,30 +28,29 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #fffae6;
+    background-color: var(--cor-secundaria);
 }
 
 .section-title {
     font-family: Pacifico, cursive;
 }
 
-#sobre-o-restaurante,
-#cardapio {
-    background-color: #fffae6;
+#sobre-evento {
+    background-color: var(--cor-secundaria);
 }
 
 .text-colored {
-    color: #e15f41;
+    color: var(--cor-principal);
 }
 
-.nav-cardapio .nav-link.active, 
-#fale-conosco button{
-    background-color: #e15f41;
-    color: #fff;
+.nav-bandas .nav-link.active, 
+#compre-seu-ingresso button{
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
 }
 
-.nav-cardapio .nav-link:hover {
-    color: #e15f41;
+.nav-bandas .nav-link:hover {
+    color: var(--cor-principal);
 }
 
 .socal-links, li {
